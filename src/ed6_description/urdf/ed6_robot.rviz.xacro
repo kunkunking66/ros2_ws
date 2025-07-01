@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/xacro" name="ed6_robot">
+
+    <!-- 包含機器人核心描述文件 -->
+    <xacro:include filename="$(find ed6_description)/urdf/ed6_robot.urdf.xacro" />
+
+    <!-- 這裡不需要添加任何其他東西，因爲RViz只需要模型的幾何和TF信息 -->
+
+</robot>

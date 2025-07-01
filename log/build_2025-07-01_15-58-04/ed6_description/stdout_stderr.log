@@ -1,0 +1,85 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /home/keria/anaconda3/bin/python3 (found version "3.12.7") found components: Interpreter 
+-- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/keria/ros2_ws/build/ed6_description
+-- Install configuration: ""
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch/gazebo.launch
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch/gazebo.launch.py
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch/display.launch
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch/display.launch.py
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ed6_robot.urdf.xacro
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ed6_robot.rviz.xacro
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ED6-URDF-0102.SLDASM.csv
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ED6-URDF-0102.SLDASM.urdf
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ed6_robot.gazebo.xacro
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/convert.sh
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/wrist1.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/wrist3.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/forearm.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/base.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/wrist2.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/wrist1.stl
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/upperarm.stl
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/forearm.stl
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/base.stl
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/shoulder.stl
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/wrist3.stl
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/wrist2.stl
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/ur5.urdf
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/wrist1.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/wrist3.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/forearm.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/base.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/wrist2.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/upperarm.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/shoulder.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/upperarm.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/shoulder.dae
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J5.STL
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J2.STL
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J0.STL
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J1.STL
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J3.STL
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J6.STL
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J4.STL
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/config
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/config/joint_names_ED6-URDF-0102.SLDASM.yaml
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/config/controllers.yaml
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/config/display.rviz
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/package.xml
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ament_index/resource_index/package_run_dependencies/ed6_description
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ament_index/resource_index/parent_prefix_path/ed6_description
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/environment/ament_prefix_path.sh
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/environment/ament_prefix_path.dsv
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/environment/path.sh
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/environment/path.dsv
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/local_setup.bash
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/local_setup.sh
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/local_setup.zsh
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/local_setup.dsv
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/package.dsv
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ament_index/resource_index/packages/ed6_description
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/cmake/ed6_descriptionConfig.cmake
+-- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/cmake/ed6_descriptionConfig-version.cmake
+-- Up-to-date: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/package.xml

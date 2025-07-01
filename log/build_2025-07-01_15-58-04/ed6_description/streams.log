@@ -1,0 +1,91 @@
+[0.007s] Invoking command in '/home/keria/ros2_ws/build/ed6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/keria/ros2_ws/src/ed6_description -DCMAKE_INSTALL_PREFIX=/home/keria/ros2_ws/install/ed6_description
+[0.075s] -- The C compiler identification is GNU 11.4.0
+[0.118s] -- The CXX compiler identification is GNU 11.4.0
+[0.123s] -- Detecting C compiler ABI info
+[0.203s] -- Detecting C compiler ABI info - done
+[0.212s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.212s] -- Detecting C compile features
+[0.213s] -- Detecting C compile features - done
+[0.216s] -- Detecting CXX compiler ABI info
+[0.303s] -- Detecting CXX compiler ABI info - done
+[0.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.314s] -- Detecting CXX compile features
+[0.314s] -- Detecting CXX compile features - done
+[0.317s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.575s] -- Found Python3: /home/keria/anaconda3/bin/python3 (found version "3.12.7") found components: Interpreter 
+[0.651s] -- Found xacro: 2.0.13 (/opt/ros/humble/share/xacro/cmake)
+[0.724s] -- Configuring done
+[0.725s] -- Generating done
+[0.726s] -- Build files have been written to: /home/keria/ros2_ws/build/ed6_description
+[0.730s] Invoked command in '/home/keria/ros2_ws/build/ed6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake /home/keria/ros2_ws/src/ed6_description -DCMAKE_INSTALL_PREFIX=/home/keria/ros2_ws/install/ed6_description
+[0.731s] Invoking command in '/home/keria/ros2_ws/build/ed6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/keria/ros2_ws/build/ed6_description -- -j32 -l32
+[0.765s] Invoked command in '/home/keria/ros2_ws/build/ed6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --build /home/keria/ros2_ws/build/ed6_description -- -j32 -l32
+[0.771s] Invoking command in '/home/keria/ros2_ws/build/ed6_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/keria/ros2_ws/build/ed6_description
+[0.778s] -- Install configuration: ""
+[0.778s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch
+[0.778s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch/gazebo.launch
+[0.778s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch/gazebo.launch.py
+[0.778s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch/display.launch
+[0.778s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/launch/display.launch.py
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ed6_robot.urdf.xacro
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ed6_robot.rviz.xacro
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ED6-URDF-0102.SLDASM.csv
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ED6-URDF-0102.SLDASM.urdf
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/urdf/ed6_robot.gazebo.xacro
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/convert.sh
+[0.779s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/wrist1.dae
+[0.780s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/wrist3.dae
+[0.780s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/forearm.dae
+[0.780s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/base.dae
+[0.780s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/wrist2.dae
+[0.781s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5
+[0.781s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh
+[0.782s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/wrist1.stl
+[0.782s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/upperarm.stl
+[0.782s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/forearm.stl
+[0.782s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/base.stl
+[0.782s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/shoulder.stl
+[0.782s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/wrist3.stl
+[0.782s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/besh/wrist2.stl
+[0.782s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/ur5.urdf
+[0.783s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual
+[0.783s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/wrist1.dae
+[0.783s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/wrist3.dae
+[0.784s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/forearm.dae
+[0.786s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/base.dae
+[0.786s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/wrist2.dae
+[0.787s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/upperarm.dae
+[0.789s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/ur5/visual/shoulder.dae
+[0.789s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/upperarm.dae
+[0.790s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/shoulder.dae
+[0.791s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup
+[0.791s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J5.STL
+[0.792s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J2.STL
+[0.793s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J0.STL
+[0.795s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J1.STL
+[0.797s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J3.STL
+[0.798s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J6.STL
+[0.799s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/meshes/backup/J4.STL
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/config
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/config/joint_names_ED6-URDF-0102.SLDASM.yaml
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/config/controllers.yaml
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/config/display.rviz
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/package.xml
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ament_index/resource_index/package_run_dependencies/ed6_description
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ament_index/resource_index/parent_prefix_path/ed6_description
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/environment/ament_prefix_path.sh
+[0.800s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/environment/ament_prefix_path.dsv
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/environment/path.sh
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/environment/path.dsv
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/local_setup.bash
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/local_setup.sh
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/local_setup.zsh
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/local_setup.dsv
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/package.dsv
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ament_index/resource_index/packages/ed6_description
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/cmake/ed6_descriptionConfig.cmake
+[0.801s] -- Installing: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/cmake/ed6_descriptionConfig-version.cmake
+[0.801s] -- Up-to-date: /home/keria/ros2_ws/install/ed6_description/share/ed6_description/package.xml
+[0.802s] Invoked command in '/home/keria/ros2_ws/build/ed6_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /usr/bin/cmake --install /home/keria/ros2_ws/build/ed6_description

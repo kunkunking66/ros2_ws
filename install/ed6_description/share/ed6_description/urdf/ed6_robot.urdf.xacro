@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/xacro" name="ed6_robot">
+
+  <!-- =================================================================== -->
+  <!-- 第1部分：爲每個連桿的慣性參數定義一個專用宏 -->
+  <!-- =================================================================== -->
+  <xacro:macro name="inertial_for_base">
+    <inertial>
+      <origin xyz="-0.00334759434427351 -0.0209390238905166 0.0387483537032058" rpy="0 0 0" />
+      <mass value="1.1813692823373" />
+      <inertia ixx="0.00273389467276804" ixy="-3.25396607614629E-06" ixz="-1.87935894542668E-05" iyy="0.00173943145723566" iyz="-0.000283484372676081" izz="0.00293773261958491" />
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertial_for_shoulder">
+    <inertial>
+      <origin xyz="-0.00223938232983684 -0.00505848952695875 -0.0112264428251495" rpy="0 0 0" />
+      <mass value="0.543850309343789" />
+      <inertia ixx="0.000493506487598564" ixy="-1.43110037312101E-08" ixz="-3.69284056830368E-09" iyy="0.000524748621706922" iyz="0.000128962212384673" izz="0.000398748315762055" />
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertial_for_upper_arm">
+    <inertial>
+      <origin xyz="-0.0911137227582635 -0.00224100281234522 0.083106254226205" rpy="0 0 0" />
+      <mass value="0.94663465861017" />
+      <inertia ixx="0.000484418205499611" ixy="5.96314159445903E-08" ixz="-7.09180354011426E-05" iyy="0.00631121999816965" iyz="2.87807867816861E-09" izz="0.00647835522875632" />
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertial_for_forearm">
+    <inertial>
+      <origin xyz="-0.0725131785654824 -0.00224473356266773 0.0041887763433246" rpy="0 0 0" />
+      <mass value="0.831391876308613" />
+      <inertia ixx="0.000460682533839593" ixy="-2.77543515366555E-09" ixz="1.3771438223127E-05" iyy="0.0044719847630167" iyz="-1.48642816276597E-08" izz="0.00453981257930233" />
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertial_for_wrist_1">
+    <inertial>
+      <origin xyz="0.00224203884382412 -0.0108943556784513 -0.00894003659973736" rpy="0 0 0" />
+      <mass value="0.305565661686187" />
+      <inertia ixx="0.000207976720434355" ixy="5.92803117356426E-09" ixz="7.67238306734234E-09" iyy="0.00017743289772098" iyz="6.11984514154454E-05" izz="0.000207310941843897" />
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertial_for_wrist_2">
+    <inertial>
+      <origin xyz="0.00226378266402783 -0.00793808933913548 -0.00540031667555441" rpy="0 0 0" />
+      <mass value="0.418471017321059" />
+      <inertia ixx="0.000325103052006729" ixy="2.6514033220033E-07" ixz="1.4929268879961E-07" iyy="0.000234160333195713" iyz="-5.12042022845616E-05" izz="0.000322590643556103" />
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertial_for_wrist_3">
+    <inertial>
+      <origin xyz="0.00208542339746718 -0.00139027276727099 -0.0114563052571122" rpy="0 0 0" />
+      <mass value="0.0614394481062491" />
+      <inertia ixx="1.87536296566105E-05" ixy="-3.52672058653186E-11" ixz="-4.33744949193764E-08" iyy="1.90910059779666E-05" iyz="1.62610384566504E-08" izz="3.37062772491755E-05" />
+    </inertial>
+  </xacro:macro>
+
+  <!-- =================================================================== -->
+  <!-- 第2部分：主宏定義 -->
+  <!-- =================================================================== -->
+  <xacro:property name="package_name" value="ed6_description"/>
+
+  <xacro:macro name="robot_link" params="name mesh_file inertial_macro">
+    <link name="${name}">
+      <xacro:call macro="${inertial_macro}" />
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://${package_name}/meshes/${mesh_file}.dae" />
+        </geometry>
+        <material name="blue">
+          <color rgba="0.2 0.4 0.694117647058824 1" />
+        </material>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <mesh filename="package://${package_name}/meshes/${mesh_file}.dae" />
+        </geometry>
+      </collision>
+    </link>
+  </xacro:macro>
+
+  <!-- =================================================================== -->
+  <!-- 第3部分：主體結構 -->
+  <!-- =================================================================== -->
+  <link name="world" />
+
+  <joint name="world_to_base_joint" type="fixed">
+    <parent link="world" />
+    <child link="base" />
+    <origin xyz="0 0 0.5" rpy="0 0 0" />
+  </joint>
+
+  <!-- 調用主宏 -->
+  <xacro:robot_link name="base"      mesh_file="base"      inertial_macro="inertial_for_base"/>
+  <xacro:robot_link name="shoulder"  mesh_file="shoulder"  inertial_macro="inertial_for_shoulder"/>
+  <xacro:robot_link name="upper_arm" mesh_file="upperarm"  inertial_macro="inertial_for_upper_arm"/>
+  <xacro:robot_link name="forearm"   mesh_file="forearm"   inertial_macro="inertial_for_forearm"/>
+  <xacro:robot_link name="wrist_1"   mesh_file="wrist1"    inertial_macro="inertial_for_wrist_1"/>
+  <xacro:robot_link name="wrist_2"   mesh_file="wrist2"    inertial_macro="inertial_for_wrist_2"/>
+  <xacro:robot_link name="wrist_3"   mesh_file="wrist3"    inertial_macro="inertial_for_wrist_3"/>
+
+  <!-- 關節定義 -->
+  <joint name="shoulder_joint" type="revolute">
+    <origin xyz="0 0 0.167" rpy="0 0 0" />
+    <parent link="base" />
+    <child link="shoulder" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-6.28" upper="6.28" effort="300" velocity="10.0" />
+  </joint>
+
+  <joint name="upper_arm_joint" type="revolute">
+    <origin xyz="0 0 0" rpy="1.5708 1.5708 0" />
+    <parent link="shoulder" />
+    <child link="upper_arm" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.35" upper="2.35" effort="300" velocity="10.0" />
+  </joint>
+
+  <joint name="forearm_joint" type="revolute">
+    <origin xyz="-0.189 0 0" rpy="0 0 0" />
+    <parent link="upper_arm" />
+    <child link="forearm" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.7" upper="2.7" effort="300" velocity="10.0" />
+  </joint>
+
+  <joint name="wrist_1_joint" type="revolute">
+    <origin xyz="-0.16 0 0.091548" rpy="0 0 -1.5708" />
+    <parent link="forearm" />
+    <child link="wrist_1" />
+    <axis xyz="0 0 1" />
+    <limit lower="-2.79" upper="2.79" effort="300" velocity="10.0" />
+  </joint>
+
+  <joint name="wrist_2_joint" type="revolute">
+    <origin xyz="0 -0.101 0" rpy="1.5708 0 0" />
+    <parent link="wrist_1" />
+    <child link="wrist_2" />
+    <axis xyz="0 0 1" />
+    <limit lower="-3.01" upper="3.01" effort="300" velocity="10.0" />
+  </joint>
+
+  <joint name="wrist_3_joint" type="revolute">
+    <origin xyz="0 0.065 0" rpy="-1.5708 0 0" />
+    <parent link="wrist_2" />
+    <child link="wrist_3" />
+    <axis xyz="0 0 1" />
+    <limit lower="-6.28" upper="6.28" effort="300" velocity="10.0" />
+  </joint>
+
+</robot>

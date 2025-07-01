@@ -1,0 +1,4 @@
+source;share/ed6_description/local_setup.bash
+source;share/ed6_description/local_setup.dsv
+source;share/ed6_description/local_setup.sh
+source;share/ed6_description/local_setup.zsh

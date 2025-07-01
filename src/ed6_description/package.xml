@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>ed6_description</name>
+  <version>1.0.0</version>
+  <description>
+    URDF and XACRO description files for the ed6 robot.
+    This package contains the 3D models (meshes) and configuration files
+    to visualize and simulate the ed6 robot in RViz and Gazebo.
+  </description>
+
+  <!-- 維護者信息，你可以修改成你自己的 -->
+  <maintainer email="keria@example.com">Keria</maintainer>
+
+  <!-- 授權協議，如果開源建議使用常見協議如 Apache-2.0, BSD, MIT -->
+  <license>Apache-2.0</license>
+
+  <!-- 作者信息 -->
+  <author email="keria@example.com">Keria</author>
+
+  <!-- ======================= -->
+  <!--       依賴項 (Dependencies)      -->
+  <!-- ======================= -->
+
+  <!-- 構建工具依賴 -->
+  <!-- ament_cmake 是ROS 2 C++包的標準構建工具 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 構建和執行依賴 -->
+  <!-- 這些是在launch文件中直接使用的，所以既是構建依賴也是執行依賴 -->
+  <!-- 提供了 `robot_state_publisher` 節點 -->
+  <depend>robot_state_publisher</depend>
+  <!-- 提供了 `joint_state_publisher_gui` 節點 -->
+  <depend>joint_state_publisher_gui</depend>
+  <!-- 提供了RViz2可視化工具 -->
+  <depend>rviz2</depend>
+  <!-- 提供了xacro解析工具，在launch文件中被調用 -->
+  <depend>xacro</depend>
+
+  <!-- 測試依賴 (可選，但保留是好習慣) -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- ======================= -->
+  <!--         導出 (Export)        -->
+  <!-- ======================= -->
+  <export>
+    <!-- 告訴ROS這個包是用ament_cmake構建的 -->
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

@@ -1,0 +1,29 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    # 控制器列表
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    ed6_arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+# 各個控制器的詳細參數
+ed6_arm_controller:
+  ros__parameters:
+    # 要控制的關節列表
+    joints:
+      - shoulder_joint
+      - upper_arm_joint
+      - forearm_joint
+      - wrist_1_joint
+      - wrist_2_joint
+      - wrist_3_joint
+    
+    # 接口配置
+    command_interfaces:
+      - position
+    state_interfaces:
+      - position
+      - velocity

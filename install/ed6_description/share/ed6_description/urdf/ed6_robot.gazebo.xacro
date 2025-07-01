@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/xacro" name="ed6_robot">
+
+    <!-- 1. 包含機器人核心描述文件 -->
+    <xacro:include filename="$(find ed6_description)/urdf/ed6_robot.urdf.xacro" />
+
+    <!-- 2. 添加 Gazebo 和 ros2_control 專用插件 -->
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="shoulder_joint">
+            <command_interface name="position">
+                <param name="min">-6.28</param>
+                <param name="max">6.28</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="upper_arm_joint">
+            <command_interface name="position">
+                <param name="min">-2.35</param>
+                <param name="max">2.35</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="forearm_joint">
+            <command_interface name="position">
+                <param name="min">-2.7</param>
+                <param name="max">2.7</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="wrist_1_joint">
+            <command_interface name="position">
+                <param name="min">-2.79</param>
+                <param name="max">2.79</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="wrist_2_joint">
+            <command_interface name="position">
+                <param name="min">-3.01</param>
+                <param name="max">3.01</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="wrist_3_joint">
+            <command_interface name="position">
+                <param name="min">-6.28</param>
+                <param name="max">6.28</param>
+            </command_interface>
+            <state_interface name="position"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+  
+    <gazebo>
+        <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+            <!-- 確保你的控制器配置文件路徑正確 -->
+            <parameters>$(find ed6_description)/config/controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+</robot>
