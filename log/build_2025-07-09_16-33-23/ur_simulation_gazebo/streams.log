@@ -1,0 +1,53 @@
+[0.008s] Invoking command in '/home/keria/ros2_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/keria/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/keria/ros2_ws/install/ur_simulation_gazebo
+[0.143s] -- The C compiler identification is GNU 11.4.0
+[0.241s] -- The CXX compiler identification is GNU 11.4.0
+[0.251s] -- Detecting C compiler ABI info
+[0.332s] -- Detecting C compiler ABI info - done
+[0.340s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.340s] -- Detecting C compile features
+[0.341s] -- Detecting C compile features - done
+[0.344s] -- Detecting CXX compiler ABI info
+[0.439s] -- Detecting CXX compiler ABI info - done
+[0.448s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.448s] -- Detecting CXX compile features
+[0.449s] -- Detecting CXX compile features - done
+[0.455s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.603s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.653s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.681s] -- Found launch_testing_ament_cmake: 1.0.9 (/opt/ros/humble/share/launch_testing_ament_cmake/cmake)
+[0.682s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.699s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.709s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.709s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.710s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.710s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.723s] -- Found PythonExtra: .so  
+[0.725s] -- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[0.774s] -- Configuring done
+[0.776s] -- Generating done
+[0.777s] -- Build files have been written to: /home/keria/ros2_ws/build/ur_simulation_gazebo
+[0.780s] Invoked command in '/home/keria/ros2_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/keria/ros2_ws/src/Universal_Robots_ROS2_Gazebo_Simulation/ur_simulation_gazebo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/keria/ros2_ws/install/ur_simulation_gazebo
+[0.782s] Invoking command in '/home/keria/ros2_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/keria/ros2_ws/build/ur_simulation_gazebo -- -j32 -l32
+[0.824s] Invoked command in '/home/keria/ros2_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/keria/ros2_ws/build/ur_simulation_gazebo -- -j32 -l32
+[0.836s] Invoking command in '/home/keria/ros2_ws/build/ur_simulation_gazebo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/keria/ros2_ws/build/ur_simulation_gazebo
+[0.843s] -- Install configuration: ""
+[0.843s] -- Execute custom install script
+[0.844s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/config/ur_controllers.yaml
+[0.855s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_control.launch.py
+[0.865s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/launch/ur_sim_moveit.launch.py
+[0.874s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/package_run_dependencies/ur_simulation_gazebo
+[0.883s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/parent_prefix_path/ur_simulation_gazebo
+[0.893s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.sh
+[0.902s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/ament_prefix_path.dsv
+[0.911s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.sh
+[0.920s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/environment/path.dsv
+[0.929s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.bash
+[0.937s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.sh
+[0.946s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.zsh
+[0.955s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/local_setup.dsv
+[0.964s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.dsv
+[0.974s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ament_index/resource_index/packages/ur_simulation_gazebo
+[0.985s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig.cmake
+[0.994s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/cmake/ur_simulation_gazeboConfig-version.cmake
+[1.002s] -- Symlinking: /home/keria/ros2_ws/install/ur_simulation_gazebo/share/ur_simulation_gazebo/package.xml
+[1.013s] Invoked command in '/home/keria/ros2_ws/build/ur_simulation_gazebo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/keria/ros2_ws/build/ur_simulation_gazebo
